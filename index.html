@@ -2,10 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Tailwind CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="max-w-[1920px] mx-auto">
+    <!-- Navbar Section Is Here -->
+    <section class="flex justify-between p-6">
+        <div class="flex justify-center items-center gap-3">
+            <img class="w-12 h-12" src="./assets/logo.png" alt="">
+            <p class="font-extrabold text-2xl text-[#006747]">Emergency<br>Service</p>
+        </div>
+        <div class="flex justify-center items-center gap-7">
+            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl">0</span><img class="w-12 h-12" src="./assets/heart.png" alt=""></div>
+            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl">100</span><img class="w-12 h-12" src="./assets/coin.png" alt=""></div>
+            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#00A63E] text-white font-bold text-xl"><span>2 Copy</span></div>
+        </div>
+    </section>
+
+    <!-- Banner Section Is Start From Here -->
+     <section class="flex flex-col justify-center items-center text-center bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)] px-15 py-3">
+        <img class="w-[92px] h-[92px] justify-center items-center" src="./assets/logo-dark.png" alt="">
+        <h1 class="text-white font-bold text-[40px]">Emergency Service Directory</h1>
+        <p class="font-semibold text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+     </section>
+
+     <!-- This is my card section  -->
+      <section class="m-10">
+        <div class="border-1 border-red-500">
+            <div class="flex justify-between">
+                <img src="./assets/ambulance.png" alt="">
+                <img src="./assets/emergency.png" alt="">
+            </div>
+                <h1>National Emergency Number</h1>
+                <p>National Emergency</p>
+                <h2>999</h2>
+                <p>All</p>
+            <div>
+                <button>Copy</button>
+                <button>Call</button>
+            </div>
+        </div>
+      </section>
+
     
 </body>
 </html>
