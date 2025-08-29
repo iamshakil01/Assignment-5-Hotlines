@@ -13,14 +13,14 @@
 </head>
 <body class="max-w-[1920px] mx-auto bg-[#00000026]">
     <!-- Navbar Section Is Here -->
-    <section class="flex justify-between p-6">
-        <div class="flex justify-center items-center gap-3">
+    <section class="flex justify-between p-6 sm:grid-col">
+        <div class="flex justify-center items-center gap-3 sm:grid-cols-1">
             <img class="w-12 h-12" src="./assets/logo.png" alt="">
             <p class="font-extrabold text-2xl text-[#006747]">Emergency<br>Service</p>
         </div>
         <div class="flex justify-center items-center gap-7">
             <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl" id="hearts">0</span><img class="w-12 h-12" src="./assets/heart.png" alt=""></div>
-            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl" id="coins">20</span><img class="w-12 h-12" src="./assets/coin.png" alt=""></div>
+            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl" id="coins">60</span><img class="w-12 h-12" src="./assets/coin.png" alt=""></div>
             <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#00A63E] text-white font-bold text-xl"><span id="copy-here">0</span><span>Copy</span></div>
         </div>
     </section>
@@ -33,7 +33,7 @@
      </section>
 
      <!-- This is my card section  -->
-      <section class=" md:grid grid-cols-4 gap-[30px] m-10">
+      <section class="grid grid-cols-4 gap-[30px] m-10">
         <div class=" w-[436px] h-[360px]  bg-[#FFFFFF] p-8 shadow-lg card">
             <div class="flex justify-between items-center">
                 <img src="./assets/emergency.png" alt="">
@@ -84,7 +84,7 @@
 
 
         <!-- Call History -->
-            <div class=" bg-[#FFFFFF] p-8 row-span-3" id="call-history">
+            <div class=" bg-[#FFFFFF] p-8 row-span-3 hidden sm:block" id="call-history">
               <div class="flex justify-between items-center my-[15px]" id="historyList">
                 <div class="font-bold">
                     <h1><i class="fa-regular fa-clock "></i>  Call History</h1>

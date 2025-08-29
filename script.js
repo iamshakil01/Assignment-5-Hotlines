@@ -4,6 +4,7 @@
     return element;
     }
 
+    // Heart Button Function Here 
     let totalHearts = 1;
     const cardButtons = document.getElementsByClassName("heart-btn")
 
@@ -13,8 +14,8 @@
     })
     }
 
-
-    let coin = 20;
+    // Call Button Function Here 
+    let coin = 60;
     const callButtons = document.querySelectorAll('.call-button');
 
     for(const button of callButtons){
@@ -23,16 +24,14 @@
     if (!card) return;
 
     
-    if (coin < 0) {
+    if (coin <= 0) {
       alert('You have no enough coins, you need minimum 20 coins for call');
       return;
     }
 
-
-    document.getElementById('coins').innerText = coin;
     coin -= 20;
+    document.getElementById('coins').innerText = coin;
     
-
     const title = card.querySelector('.title').innerText;
     const number = card.querySelector('.number').innerText;
 
@@ -40,7 +39,7 @@
 
 
     const now = new Date(); // current date and time
-const timestamp = now.toLocaleString(); // user-friendly, locale-specific string
+    const timestamp = now.toLocaleString(); // user-friendly, locale-specific string
 
 
      const li = document.createElement('li');
@@ -63,7 +62,7 @@ const timestamp = now.toLocaleString(); // user-friendly, locale-specific string
 
 
 
-
+                           // Copy Button Function Here 
     let copy = 1;
     const copyButtons = document.querySelectorAll('.card-btn');
 
@@ -75,3 +74,17 @@ const timestamp = now.toLocaleString(); // user-friendly, locale-specific string
     let copies = document.getElementById("copy-here").innerText = copy++
     })
     }
+
+
+    const numberElements = document.querySelectorAll('.card .number');
+
+    numberElements.forEach(numberElement => {
+     numberElement.addEventListener('click', function() {
+    const number = this.innerText;
+
+    navigator.clipboard.writeText(number)
+      .then(() => {
+        alert(`Hotline Number Copied ${number}`);
+      })
+      });
+      });
