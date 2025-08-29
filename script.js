@@ -1,19 +1,20 @@
-function getElement(id){
+    
+    function getElement(id){
     const element = document.getElementById(id);
     return element;
-}
+    }
 
-let totalHearts = 1;
- const cardButtons = document.getElementsByClassName("heart-btn")
+    let totalHearts = 1;
+    const cardButtons = document.getElementsByClassName("heart-btn")
 
-for(let cardButton of cardButtons){
+    for(let cardButton of cardButtons){
     cardButton.addEventListener("click", function(){
         let heart =document.getElementById("hearts").innerText = totalHearts++
     })
-}
+    }
 
 
-    let coin = 40;
+    let coin = 20;
     const callButtons = document.querySelectorAll('.call-button');
 
     for(const button of callButtons){
@@ -28,25 +29,30 @@ for(let cardButton of cardButtons){
     }
 
 
-    // কল হিস্ট্রি যোগ করার ফাংশন
-
-    
-    // const historyList = document.getElementById('call-history');
-    // const li = document.createElement('div');
-    // // li.textContent = `Service ${title}, number: ${number}`;
-    // historyList.appendChild(div);
-
     document.getElementById('coins').innerText = coin;
     coin -= 20;
-
-
 
     const title = card.querySelector('.title').innerText;
     const number = card.querySelector('.number').innerText;
 
     alert(`Calling ${title} number ${number}...`);
+
+
+     const li = document.createElement('li');
+    li.textContent = `${title} ${number}`;
+    const historyList = document.getElementById('call-history-list');
+    historyList.appendChild(li);
+
     });
-  }
+    }
+
+    // Clear Button Function 
+
+    const callHistory = document.getElementById("clear-history").addEventListener("click", function(){
+        
+    })
+
+
 
 
     let copy = 1;
@@ -59,30 +65,4 @@ for(let cardButton of cardButtons){
     alert('Copy button clicking is counting',)
     let copies = document.getElementById("copy-here").innerText = copy++
     })
-}
-
-
-
-
-
-
-// let count = 0;
-// count++
-
-// document.querySelectorAll(".heart-button").addEventListener('click',function(){
-
-   
-//     document.getElementById("hearts").innerText = count
-//     console.log(count)
-// })
-
-
-// let count = 0;
-// const like = document.querySelectorAll(".heart-button").addEventListener("click", function(){
-
-//     count++
-//     let counts = document.getElementById("hearts")
-//     let totalCounts = counts.innerText= count
-//     console.log(totalCounts)
-
-// })
+    }
