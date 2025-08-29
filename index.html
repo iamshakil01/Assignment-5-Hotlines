@@ -20,8 +20,8 @@
         </div>
         <div class="flex justify-center items-center gap-7">
             <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl" id="hearts">0</span><img class="w-12 h-12" src="./assets/heart.png" alt=""></div>
-            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl">100</span><img class="w-12 h-12" src="./assets/coin.png" alt=""></div>
-            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#00A63E] text-white font-bold text-xl"><span>2 Copy</span></div>
+            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#41ff6b1a]"><span class="font-extrabold text-2xl" id="coins">40</span><img class="w-12 h-12" src="./assets/coin.png" alt=""></div>
+            <div class="flex justify-center items-center gap-3 w-[123px] h-[52px] p-3 rounded-[50px] bg-[#00A63E] text-white font-bold text-xl"><span id="copy-here">0</span><span>Copy</span></div>
         </div>
     </section>
 
@@ -44,7 +44,7 @@
                 <h2 class="mt-3 font-bold text-xl number">999</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[53px] py-[6px] px-[12px] my-6 text-white">All</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class="h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white"></i>  Call</button>
             </div>
         </div>
@@ -58,7 +58,7 @@
                 <h2 class="mt-3 font-bold text-xl number">999</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[70px] py-[6px] px-[12px] my-6 text-white">Police</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white call-button"></i>   Call</button>
             </div>
         </div>
@@ -72,13 +72,19 @@
                 <h2 class="mt-3 font-bold text-xl number">999</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[53px] py-[6px] px-[12px] my-6 text-white">Fire</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white call-button"></i>   Call</button>
             </div>
         </div>
 
+
+
+
+
+
+
         <!-- Call History -->
-        <div class=" bg-[#FFFFFF] p-8 row-span-3">
+        <div class=" bg-[#FFFFFF] p-8 row-span-3" id="call-history">
            <div class="flex justify-between items-center my-[15px]">
              <div class="font-bold">
                 <h1><i class="fa-regular fa-clock "></i>  Call History</h1>
@@ -87,7 +93,12 @@
                 <button class="w-[114px] h-[40px] rounded-3xl text-white p-2 bg-[#00A63E]">Clear</button>
             </div>
            </div>
+                        <div>
+                              <h1></h1>
+                        </div>
         </div>
+
+
 
 
 
@@ -101,7 +112,7 @@
                 <h2 class="mt-3 font-bold text-xl number">1994-999999</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[70px] py-[6px] px-[12px] my-6 text-white">Health</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white call-button"></i>   Call</button>
             </div>
         </div>
@@ -115,7 +126,7 @@
                 <h2 class="mt-3 font-bold text-xl number">109</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[53px] py-[6px] px-[12px] my-6 text-white">Help</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white call-button"></i>   Call</button>
             </div>
         </div>
@@ -129,7 +140,7 @@
                 <h2 class="mt-3 font-bold text-xl number">106</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[60px] py-[6px] px-[12px] my-6 text-white">Govt.</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white call-button"></i>   Call</button>
             </div>
         </div>
@@ -143,7 +154,7 @@
                 <h2 class="mt-3 font-bold text-xl number">999</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[53px] py-[6px] px-[12px] my-6 text-white">All</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white call-button"></i>   Call</button>
             </div>
         </div>
@@ -157,7 +168,7 @@
                 <h2 class="mt-3 font-bold text-xl number">16445</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] w-[53px] py-[6px] px-[12px] my-6 text-white">NGO</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white call-button"></i>   Call</button>
             </div>
         </div>
@@ -171,7 +182,7 @@
                 <h2 class="mt-3 font-bold text-xl number">163</h2>
                 <p class="rounded-3xl bg-[#5c5c5c5c] h-[37px] max-w-[70px] py-[6px] px-[12px] my-6 text-white">Travel</p>
             <div class="flex gap-2">
-                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class=" h-10 rounded-lg bg-[#FFFFFF] w-[50%] border-1 border-gray-400 card-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                 <button class=" h-10 rounded-lg w-[50%] bg-[#00A63E] text-white p-[2px] call-button"><i class="fa-solid fa-phone text-white"></i>   Call</button>
             </div>
         </div>

@@ -12,36 +12,54 @@ for(let cardButton of cardButtons){
     })
 }
 
-// Call Buttons Function
 
-// const callButtons = document.getElementsByClassName("call-button")
-
-// for(callButton of callButtons){
-//     callButton.addEventListener("click", function(){
-//         alert(`Calling ${serviceName} number ${serviceNumber}...`);
-//     })
-// }
-
-
- const callButtons = document.querySelectorAll('.call-button');
+    let coin = 40;
+    const callButtons = document.querySelectorAll('.call-button');
 
     for(const button of callButtons){
     button.addEventListener('click',function() {
     const card = this.closest('.card');
-    this.style = 'black';
     if (!card) return;
-    const title = card.querySelector('.title').textContent;
-    const number = card.querySelector('.number').textContent;
+
+    
+    if (coin < 0) {
+      alert('You have no enough coins, you need minimum 20 coins for call');
+      return;
+    }
+
+
+    // কল হিস্ট্রি যোগ করার ফাংশন
+
+    
+    // const historyList = document.getElementById('call-history');
+    // const li = document.createElement('div');
+    // // li.textContent = `Service ${title}, number: ${number}`;
+    // historyList.appendChild(div);
+
+    document.getElementById('coins').innerText = coin;
+    coin -= 20;
+
+
+
+    const title = card.querySelector('.title').innerText;
+    const number = card.querySelector('.number').innerText;
 
     alert(`Calling ${title} number ${number}...`);
     });
   }
 
 
+    let copy = 1;
+    const copyButtons = document.querySelectorAll('.card-btn');
 
-
-
-
+    for(const button of copyButtons){
+    button.addEventListener('click',function(){
+    const card = this.closest('.card');
+    if (!card) return;
+    alert('Copy button clicking is counting',)
+    let copies = document.getElementById("copy-here").innerText = copy++
+    })
+}
 
 
 
