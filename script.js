@@ -31,6 +31,7 @@
 
     document.getElementById('coins').innerText = coin;
     coin -= 20;
+    
 
     const title = card.querySelector('.title').innerText;
     const number = card.querySelector('.number').innerText;
@@ -38,19 +39,27 @@
     alert(`Calling ${title} number ${number}...`);
 
 
+    const now = new Date(); // current date and time
+const timestamp = now.toLocaleString(); // user-friendly, locale-specific string
+
+
      const li = document.createElement('li');
-    li.textContent = `${title} ${number}`;
-    const historyList = document.getElementById('call-history-list');
-    historyList.appendChild(li);
+        li.textContent = `${title} ${number}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${timestamp}`;
+     const historyList = document.getElementById('call-history-list');
+           historyList.appendChild(li);
 
     });
     }
 
     // Clear Button Function 
 
-    const callHistory = document.getElementById("clear-history").addEventListener("click", function(){
-        
-    })
+        const historyList = document.getElementById('call-history-list');
+
+        const clearBtn = document.getElementById('clear-history');
+
+         clearBtn.addEventListener('click', function() {
+        historyList.innerText = '';
+        });
 
 
 
